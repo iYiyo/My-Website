@@ -1,0 +1,36 @@
+// variables and icons
+@import "lib/_vars";
+@import "lib/_icons";
+
+  // HTML STRUCTURE
+@import "base/_landing.scss";
+@import "base/_h.scss";
+@import "base/_list.scss";
+@import "base/_links.scss";
+@import "base/_figure-img.scss";
+
+// LAYOUT
+@import "layout/_grid.scss";
+@import "layout/_header.scss";
+@import "layout/_principal.scss";
+@import "layout/_cover-home.scss";
+@import "layout/_footer.scss";
+
+// LAYOUT BLOG
+@import "layout/_blog.scss";
+
+// LAYOUT ACERCA
+@import "layout/_acerca.scss";
+
+// LAYOUT PORTAFOLIO
+@import "layout/_portafolio.scss";
+
+// LAYOUT NOTA
+@import "layout/_nota.scss";
+
+// ANIMATIONS
+@import "components/_animations.scss";
+
+
+
+@import "components/_utilitis.scss";

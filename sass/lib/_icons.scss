@@ -1,0 +1,54 @@
+.e-mail::before{
+  content: "\f0e0";
+  font-family: "FontAwesome";
+}
+
+.menu::before{
+  content: "\f0c9";
+  font-family: "FontAwesome";
+}
+
+.close::before{
+  content: "\f00d";
+  font-family: "FontAwesome";
+}
+
+.github::before{
+  content: "\f09b";
+  font-family: "FontAwesome";
+}
+
+.linkedin::before{
+  content: "\f08c";
+  font-family: "FontAwesome";
+}
+
+// BLOG-ICONS
+.twitter1::before{
+  content: "\f099";
+  font-family: "FontAwesome";
+}
+
+
+.facebook1::before{
+  content: "\f082";
+  font-family: "FontAwesome";
+}
+
+.instagram1::before{
+  content: "\f16d";
+  font-family: "FontAwesome";
+}
+
+.youtube1::before{
+  content: "\f167";
+  font-family: "FontAwesome";
+}
+
+// EMOTES
+
+.fas::before{
+  content: "\f004";
+  font-family: "FontAwesome";
+  color:red;
+}

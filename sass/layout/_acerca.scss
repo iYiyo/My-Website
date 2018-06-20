@@ -1,0 +1,80 @@
+.about-me{
+    width: $web-size;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 100%;;
+}
+
+.acerca{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    background: linear-gradient(to bottom right,$color-acua,rgb(14, 112, 116));
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    & img{
+        border-radius: 50%;
+    }
+    & figure{
+        margin-left: 30px;
+        margin-right: 30px;
+        color: $color-font-alter;
+        font-family: $font-quick;
+    }
+
+    @media screen and (max-width: 1034px) {
+        & figure{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        & img{
+            width: 60%;
+        }
+    }
+}
+
+.div-text{
+    color: $color-font-alter;
+    font-family: $font-quick;
+    width: 36%;
+    & h2{
+        font-size: 30px;
+        cursor: default;
+    }
+    & p{
+        font-size: 21px;
+    }
+    & a{
+        font-size: 21px;
+        text-align: left;
+        color: $color-font-alter;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    @media screen and (max-width: 1034px) {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: 50px;
+        & p{
+            text-align: justify;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        & p{
+            text-align: left;
+        }
+        & a{
+            font-size: 18px;
+        }
+    }
+}

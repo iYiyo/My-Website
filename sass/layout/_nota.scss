@@ -1,0 +1,115 @@
+.nota-section{
+    font-family: $font-quick;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    & main{
+        width: 65%;
+        float: left;
+    }
+    & figure{
+        width: 100%;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    & img{
+        width: 100%;
+    }
+    & aside{
+        width: 25%;
+        height: 100%;
+        margin-left: 25px;
+        float: right;
+        font-family: $font-header;
+        border-radius: 8px;
+        background: linear-gradient(to bottom right,$color-acua,rgb(14, 112, 116));
+        padding-top: 25px;
+        padding-left: 15px;
+        padding-right: 15px;
+        color: $color-font-alter;
+        & h2{
+            cursor: default;
+        }
+        & a{
+            color: $color-font-alter;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        & p{
+            margin: 0;
+            margin-top: 10px;
+        }
+        & article{
+            margin-bottom: 25px;
+            
+        }
+     }
+
+     @media screen and (max-width: 913px) {
+         & h2{
+             font-size: 1.3em;
+         }
+     }
+
+     @media screen and (max-width: 794px) {
+        & h2{
+            font-size: 1.1em;
+        }
+    }
+
+    @media screen and (max-width: 910px) {
+        & main{
+            width: 60%;
+        }
+        & aside{
+            width: 240px;
+        }
+    }
+
+     @media screen and (max-width: 800px) {
+         & main{
+             float: none;
+             width: 100%;
+         }
+         & aside{
+             float: none;
+             width: 60%;
+             margin-left: auto;
+             margin-right: auto;
+             margin-top: 80px;
+         }
+         & h2{
+             font-size: 1.7em;
+             text-align: center;
+         }
+     }
+
+    }
+    
+    
+    .titulos{
+        display: block;  
+        & h1{
+            font-size: 56px;
+            display: block;
+            margin-bottom: 8px;
+            cursor: default;
+        }
+        & span{
+            display: block;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+        & p{
+            font-family: $font-header;
+            font-size: 1.8rem;
+        }
+        @media screen and (max-width: 500px) {
+            & h1{
+                font-size: 40px;
+            }
+        }
+}

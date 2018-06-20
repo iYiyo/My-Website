@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yiyo</title>
+    <link rel="shorcut icon" href="img/logo3.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+</head>
+<body>
+    <nav class="menu-responsive">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">Acerca</a></li>
+            <li><a href="portafolio.html">Portafolio</a></li>
+        </ul>
+        <img src="img/logo-opa.png" alt="">
+    </nav>
+    <div class="portafolio-container" id="portafolio">
+        <!-- HEADER CONTAINER -->
+      <div class="shadow">
+        <!-- HEADER -->
+        <header class="header-blog">
+          <div class="logo">
+            <a href="index.html"><h4>RJ</h4></a>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="about.html">Acerca</a></li>
+              <li><a href="portafolio.html">Portafolio</a></li>
+            </ul>
+          </nav>
+          <div>
+            <span class="menu" id="menu"></span>
+          </div>
+        </header>
+        <!-- HEADER -->
+      </div>
+      <!-- HEADER CONTAINER -->
+
+      <section class="portafolio">
+        <main>
+            <article>
+                <figure>
+                    <a target="_blank" href="https://iyiyo.github.io/invie-responsive-/"><img src="img/invie.png" alt="invie"></a>
+                </figure>
+                <div>
+                    <a target="_blank" href="https://iyiyo.github.io/invie-responsive-/"><H2>Guitarras Invie-sibles</H2></a>
+                </div>
+            </article>
+            <article>
+                <figure>
+                    <a target="_blank" href="https://iyiyo.github.io/Desafio-3/"><img src="img/desafio3.png" alt="presentacion"></a>
+                </figure>
+                <div>
+                    <a target="_blank" href="https://iyiyo.github.io/Desafio-3/"><H2>Presentación</H2></a>
+                </div>
+            </article>
+            <article>
+                <figure>
+                    <a target="_blank" href="https://iyiyo.github.io/ccs-grid-movi.es/"><img src="img/movi.png" alt="movi"></a>
+                </figure>
+                <div>
+                    <a target="_blank" href="https://iyiyo.github.io/ccs-grid-movi.es/"><H2>Movi.es</H2></a>
+                </div>
+            </article>
+            <article>
+                <figure>
+                    <a target="_blank" href=""><img src="img/pvideo.png" alt="platzi-video"></a>
+                </figure>
+                <div>
+                    <a target="_blank" href=""><H2>Platzi-video</H2></a>
+                </div>
+            </article>
+            <article>
+                <figure>
+                    <a target="_blank" href=""><img src="img/colorful.png" alt="colorful"></a>
+                </figure>
+                <div>
+                    <a target="_blank" href=""><H2>Colorful-blog</H2></a>
+                </div>
+            </article>
+        </main>
+      </section>
+
+      <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">Acerca</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+            </ul>
+        </nav>
+        <div class="contacto">
+            <div>
+                <h3>Contacto:</h3>
+                <a href="mailTo:rafael.jair.sanchez@gmail.com"><span>rafael.jair.sanchez@gmail.com</span></a>
+            </div>
+            <div class="redes-principal">
+                <a class="twitter1" target="_blank" href="https://twitter.com/iYiiyoo"></a>
+                <a class="facebook1" target="_blank" href=""></a>
+                <a class="instagram1" target="_blank" href="https://www.instagram.com/iyiiyoo/"></a>
+                <a class="youtube1" target="_blank" href="https://www.youtube.com/channel/UCgmwKy8JXPIyaji9GrXn52g"></a>
+                <a class="github" href="https://github.com/iYiyo" target="_blank"></a>
+                <a class="linkedin" href="https://www.linkedin.com/in/iyiyo/" target="_blank"></a>
+                <a class="platzi" target="_blank" href="https://platzi.com/@iYiyo/"></a>
+                <a class="e-mail" href="mailto:rafael.jair.sanchez@gmail.com"></a>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script type="text/javascript">
+        const $body = document.getElementById("body");
+        const $burgerMenu = document.getElementById("menu");
+        const $portafolio = document.getElementById("portafolio");
+        $burgerMenu.addEventListener("click", active);
+
+        function active()  {
+            $portafolio.classList.toggle("active");
+            $burgerMenu.classList.toggle("close");
+            $body.classList.toggle("overflow");
+        }
+
+        window.addEventListener("resize", tam)
+
+        function tam(){
+            let width = window.innerWidth;
+            if (width > 600) {
+            $portafolio.classList.remove("active");
+            $burgerMenu.classList.remove("close");
+            $body.classList.remove("overflow");
+            }
+        }
+
+    </script>
+</body>
+</html>

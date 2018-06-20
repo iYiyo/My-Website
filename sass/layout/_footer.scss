@@ -1,0 +1,128 @@
+footer{
+    z-index: 3;
+    background-color: $color-footer;
+    color: $color-font-alter;
+    font-family: $font-quick;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    & nav{
+        width: 100%;
+        height: 25%;
+    }
+    & ul{
+        padding: 0;
+        margin-top: 5px;
+        padding: 10px  0; 
+        border-bottom: double 1px rgba(255, 255, 255, 0.3);
+        border-top: double 1px rgba(255, 255, 255, 0.3);
+        display: flex;
+        justify-content: center;
+    }
+    & li{
+        margin-right: 40px;
+        &:last-child{
+            margin-right: 0;
+        }
+        & a{
+            color: $color-font-alter;
+            font-size: 11px;
+            transition: 0.3s;
+            &:hover{
+                color: $color-acua;
+            }
+        }
+    }
+}
+
+.contacto{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    & h3{
+        display: block;
+        margin-bottom: 15px;
+        cursor: default;
+    }
+    & a{
+        color: $color-acua;
+        transition: 0.3s;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    @media screen and (max-width: 680px) {
+        display: initial;
+    }
+}
+
+.redes-principal{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 17%;
+    & a{
+        margin-right: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 26px;
+        height: 35px;
+        width: 35px;
+        line-height: 35px;
+        border-radius: 50%;
+        background: white;
+        color: black;
+        transition: 0.5s;
+        &:hover{
+            background: $color-acua;
+            color: white;
+            text-decoration: none;
+        }
+        &:nth-of-type(7){
+            background-image: url("../img/platzi-black1.png"); 
+            background-size:35px; 
+            background-position: center;
+            transition: 0.5s;
+            &:hover{
+                background-image: url("../img/platzi-white.png"); 
+            }
+        }
+    }
+    @media screen and (max-width: 1313px) {
+        width: 20%;
+    }
+    @media screen and (max-width: 1118px) {
+        width: 25%;
+    }
+    @media screen and (max-width: 898px) {
+        justify-content: start;
+        width: 35%;
+        & a{
+            margin-right: 32px;
+        }
+    }
+    @media screen and (max-width: 680px) {
+        width: 44%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: 25px;
+        justify-content: space-around;
+        & a{
+            margin-right: 30px;
+            &:nth-of-type(4n+4){
+                margin-right: 0;
+            }
+        }
+    }
+    @media screen and (max-width: 549px) {
+        width: 55%;
+    }
+    @media screen and (max-width: 452px) {
+        width: 67%;
+    }
+    @media screen and (max-width: 344px) {
+        width: 86%;
+    }
+}

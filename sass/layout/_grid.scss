@@ -1,0 +1,71 @@
+// CONTENEDOR DEL HOME
+.home-container{
+  position: relative;
+  transition: 0.5s;
+  display: grid;
+  z-index: 2;
+  box-shadow: 6px 0px 15px #000000;
+  grid-template-rows: 67px 500px 1fr minmax(200px, 100%);
+  min-height: 100%;
+  background: white;
+
+  @media screen and (max-width: 1000px){
+    grid-template-rows: 67px 750px 1fr minmax(200px, 100%);
+  }
+  @media screen and (max-width: 800px) {
+    grid-template-rows: 67px 100% 1fr minmax(200px, 100%);
+  }
+}
+
+.active{
+  transform: translateX(-70%);
+}
+
+
+// CONTENEDOR DEL BLOG
+.blog-container{
+  background: white;
+  position: relative;
+  transition: 0.5s;
+  display: grid;
+  z-index: 2;
+  box-shadow: 6px 0px 15px #000000;
+  grid-template-rows: 67px 100% minmax(200px, 100%);
+  min-height: 100%;
+}
+
+// CONTENEDOR DEL ABOUT
+.about-container{
+  min-height: 100%;
+  background: white;
+  position: relative;
+  transition: 0.5s;
+  display: grid;
+  z-index: 2;
+  box-shadow: 6px 0px 15px #000000;
+  grid-template-rows: 67px 100% minmax(200px, 100%);
+}
+
+// CONTENEDOR DEL PORTAFOLIO
+.portafolio-container{
+  min-height: 100%;
+  background: white;
+  position: relative;
+  transition: 0.5s;
+  display: grid;
+  z-index: 2;
+  box-shadow: 6px 0px 15px #000000;
+  grid-template-rows: 67px 100% minmax(200px, 100%);
+}
+
+// CONTENEDOR NOTA
+.nota-container{
+  min-height: 100%;
+  background: white;
+  position: relative;
+  transition: 0.5s;
+  display: grid;
+  z-index: 2;
+  box-shadow: 6px 0px 15px #000000;
+  grid-template-rows: 67px 100% minmax(200px, 100%);
+}

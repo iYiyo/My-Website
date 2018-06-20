@@ -1,0 +1,125 @@
+.welcome{
+    border-top: double 2px black;
+    border-bottom: double 2px black;
+    margin-bottom: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px; 
+}
+
+.cover-blog{
+    width: $web-size2;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    & h2{
+        text-align: center;
+        font-family: $font-header;
+        display: block;
+        font-size: 52px;
+        text-transform: uppercase;
+        cursor: default;
+        margin-bottom: 7px;
+        user-select: none;
+    }
+    & h4{
+        text-align: center;
+        font-family: $font-header;
+        display: block;
+        font-size: 22px;
+        text-transform: uppercase;
+        cursor: default;
+        user-select: none;
+    }
+    & main{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    & article{
+        width: 350px;
+        font-family: $font-quick;
+        transition: 0.3s;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    & figure{
+        width: 100%;
+        overflow: hidden;
+    }
+    & img{
+        width: 100%;
+        transition: 0.3s;
+        &:hover{
+            transform: scale(1.02);
+          }
+    }
+    & h3{
+        font-size: $font-menu;
+        text-transform: capitalize;
+        transition: 0.5s;
+        &:hover{
+          text-decoration: underline;
+        }
+    }
+    & p{
+        color: $color-fonts;
+        font-family: $font-header;
+        font-size: $font-p;
+    }
+    & span{
+        display: block;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        & a{
+            font-size: $font-span;
+            color: $color-spna;
+            text-transform: uppercase;
+            transition: 0.3s;
+            &:hover{
+                color: $color-hover-span;
+            }
+        }
+    }
+    & time{
+        display: block;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-size: $font-span;
+        color: $color-spna;
+        user-select: none;
+        cursor: default;
+        transition: 0.3s;
+        &:hover{
+            color: $color-hover-span;
+        }
+    }
+    @media screen and (max-width: 1317px) {
+        & article{
+            width: 300px;
+        }
+    }
+    @media screen and (max-width: 1150px) {
+        & article{
+            width: 250px;
+        }
+    }
+    @media screen and (max-width: 982px) {
+        & article{
+            width: 40%;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        & article{
+            width: 100%;
+        }
+    }
+    @media screen and (max-width:380px) {
+        & h2{
+            font-size: 40px;
+        }
+        & h4{
+            font-size: 16px;
+        }
+    }
+}

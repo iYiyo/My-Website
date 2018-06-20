@@ -1,0 +1,242 @@
+// CONTENEDOR PRINCIPAL
+.principal{
+  position: relative;
+  background: $color-font-alter;
+  z-index: 4;
+  box-shadow: 0px -1px 18px #888888;
+  padding-top: 50px;
+  & h3{
+    display: block;
+    margin-bottom: 20px;
+    font-size: $font-menu;
+    font-family: $font-header;
+    margin-left: 5%;
+    cursor: default;
+  }
+  &-container{
+    width: $web-size2;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    @media screen and(max-width: 805px) {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+
+// CONTENEDOR DE LOS ARTICULOS
+main{
+  width: 66%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @media screen and (max-width: 852px) {
+    width: 60%;
+  }
+  @media screen and(max-width: 805px){
+    width: 100%;
+  }
+}
+
+// POSTS
+.nota{
+  width: 48%;
+  font-family: $font-quick;
+  transition: 0.3s;
+  & figure{
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  & img{
+    width: 100%;
+    transition: 0.3s;
+    &:hover{
+      transform: scale(1.02);
+    }
+  }
+  & h2{
+    font-size: $font-menu;
+    text-transform: capitalize;
+    transition: 0.5s;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  & p{
+    color: $color-fonts;
+    font-family: $font-header;
+    font-size: $font-p;
+  }
+  & time{
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: $font-span;
+    color: $color-spna;
+    user-select: none;
+    cursor: default;
+    transition: 0.3s;
+    &:hover{
+      color: $color-hover-span;
+    }
+  }
+  & span{
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: $font-span;
+    text-transform: uppercase;
+    & a{
+      transition: 0.3s;
+      color: $color-spna;
+      &:hover{
+        color: $color-hover-span;
+      }
+    }
+  }
+
+  @media screen and (max-width: 835px){
+    & p{
+      font-size: 14px;
+    }
+  } 
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    & p{
+      font-size: $font-p;
+    }
+  }
+}
+
+article{
+  margin-bottom: 50px;
+}
+
+// RECOMENDADO (CHECK THIS OUT)
+.popular{
+  height: 100%;
+  width: 30%;
+  margin-left: 50px;
+  border-radius: 8px;
+  background: linear-gradient(to bottom right,$color-acua,rgb(14, 112, 116));
+  color: $color-font-alter;
+  font-family: $font-quick;
+  padding-top: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  & figure{
+    width: 100%;
+    margin-right: 15px;
+    overflow: hidden;
+  }
+  & h4{
+    display: block;
+    font-size: $font-myname;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 700;
+    cursor: default;
+  }
+  & img{
+    width: 150px;
+    transition: 0.3s;
+    &:hover{
+      transform: scale(1.03);
+    }
+  }
+  & article{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  & h5{
+    margin: 0;
+    font-size: 16px;
+    color: $color-font-alter;
+    font-weight: 700;
+    transform: 0.3;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+   & p{
+     margin-top: 5px;
+     font-size: $font-p-note;
+     font-family: $font-header;
+    }
+
+  @media screen and (max-width: 1205px) {
+    & img{
+      width: 100px;
+    }
+    & h5{
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 1050px) {
+    & article{
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+    }
+    & p{
+      font-size: 12px;
+    }
+    & img{
+      width: 70%;
+    }
+    & div{
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 805px) {
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 50px;
+   & figure{
+     margin-right: 0;
+     margin-bottom: 15px;
+  }
+   & article{
+    width: 25%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+   }
+   & img{
+     width: 100%;
+   }
+   & div{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+   }
+  }
+
+  @media screen and (max-width: 600px) {
+    & article{
+      width: 40%;
+      &:nth-of-type(5){
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px){
+    & article{
+      width: 100%;
+    }
+    & h5{
+      font-size: 22px;
+    }
+    & p{
+      font-size: 15px;
+    }
+  }
+}
