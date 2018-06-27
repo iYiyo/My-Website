@@ -33,6 +33,9 @@ footer{
             }
         }
     }
+    @media screen and (max-width: 680px){
+        padding-bottom: 25px;
+    }
 }
 
 .contacto{
@@ -107,7 +110,6 @@ footer{
         margin-left: auto;
         margin-right: auto;
         margin-top: 50px;
-        margin-bottom: 25px;
         justify-content: space-around;
         & a{
             margin-right: 30px;

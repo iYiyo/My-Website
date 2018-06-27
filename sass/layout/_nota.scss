@@ -19,8 +19,9 @@
     }
     & aside{
         width: 25%;
-        height: 100%;
+        height: auto;
         margin-left: 25px;
+        padding-bottom: 10px;
         float: right;
         font-family: $font-header;
         border-radius: 8px;

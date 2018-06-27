@@ -744,6 +744,9 @@ footer {
       transition: 0.3s; }
       footer li a:hover {
         color: #1ee9e9; }
+  @media screen and (max-width: 680px) {
+    footer {
+      padding-bottom: 25px; } }
 
 .contacto {
   width: 100%;
@@ -824,7 +827,6 @@ footer {
       margin-left: auto;
       margin-right: auto;
       margin-top: 50px;
-      margin-bottom: 25px;
       -ms-flex-pack: distribute;
       justify-content: space-around; }
       .redes-principal a {
@@ -1129,8 +1131,9 @@ footer {
     width: 100%; }
   .nota-section aside {
     width: 25%;
-    height: 100%;
+    height: auto;
     margin-left: 25px;
+    padding-bottom: 10px;
     float: right;
     font-family: "Roboto", sans-serif;
     border-radius: 8px;
