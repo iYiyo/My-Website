@@ -13,7 +13,7 @@
     grid-template-rows: 67px 750px 1fr minmax(200px, 100%);
   }
   @media screen and (max-width: 800px) {
-    grid-template-rows: 67px 100% 1fr minmax(200px, 100%);
+    grid-template-rows: 67px 1fr minmax(200px, 100%);
   }
 }
 
@@ -30,7 +30,7 @@
   display: grid;
   z-index: 2;
   box-shadow: 6px 0px 15px #000000;
-  grid-template-rows: 67px 100% minmax(200px, 100%);
+  grid-template-rows: 67px 1fr minmax(200px, 100%);
   min-height: 100%;
 }
 
@@ -43,7 +43,7 @@
   display: grid;
   z-index: 2;
   box-shadow: 6px 0px 15px #000000;
-  grid-template-rows: 67px 100% minmax(200px, 100%);
+  grid-template-rows: 67px 1fr minmax(200px, 100%);
 }
 
 // CONTENEDOR DEL PORTAFOLIO
@@ -55,7 +55,7 @@
   display: grid;
   z-index: 2;
   box-shadow: 6px 0px 15px #000000;
-  grid-template-rows: 67px 100% minmax(200px, 100%);
+  grid-template-rows: 67px 1fr minmax(200px, 100%);
 }
 
 // CONTENEDOR NOTA
@@ -67,5 +67,5 @@
   display: grid;
   z-index: 2;
   box-shadow: 6px 0px 15px #000000;
-  grid-template-rows: 67px 100% minmax(200px, 100%);
+  grid-template-rows: 67px 1fr minmax(200px, 100%);
 }

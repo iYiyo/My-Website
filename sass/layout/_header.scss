@@ -141,4 +141,9 @@ header{
   @media screen and (max-width: 600px) {
     display: initial;
   }
+  @media screen and (max-height: 548px) {
+    & img {
+      display: none;
+    }
+  }
 }
